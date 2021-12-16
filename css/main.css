@@ -14,3 +14,110 @@
 /* ==========================================================================
    Main challenge styles
    ========================================================================== */
+
+html {
+  font-size: .9375em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(233, 47%, 7%);
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .85rem;
+  font-weight: 250;
+  letter-spacing: .02rem;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Mobile styles
+   ========================================================================== */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5.87em 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 326px;
+  width: 86.93%;
+  background: hsl(244, 38%, 16%);
+}
+
+.header {
+  min-height: 240px;
+  width: 100%;
+  background: hsl(244, 38%, 16%) url("../images/image-header-mobile.jpg") top left / 100% no-repeat;
+}
+
+article {
+  margin: 3em;
+}
+
+article h1 {
+  margin-bottom: 1.1em;
+  font-size: 1.6rem;
+}
+
+article h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+aside {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+aside div {
+  width: 75%;
+  margin-bottom: 2.35em;
+}
+
+aside h1 {
+  margin-bottom: .49em;
+}
+
+footer {
+  margin: 2em 0;
+}
+
+/* Tablets & Mid-size device styles
+   ========================================================================== */
+
+@media screen and (min-width: 1440px) {}
+
+/* Desktop styles
+   ========================================================================== */
+
+@media screen and (min-width: 1440px) {}
