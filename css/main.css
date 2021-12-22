@@ -12,8 +12,13 @@
 }
 
 /* ==========================================================================
-   Main challenge styles
+   Main Challenge Styles
    ========================================================================== */
+
+/* Mobile Styles
+   ========================================================================== */
+
+/* Global Selectors */
 
 html {
   font-size: .9375em;
@@ -48,44 +53,50 @@ p {
   padding: 0;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca', sans-serif;
-  font-size: .85rem;
   font-weight: 250;
-  letter-spacing: .02rem;
-  line-height: 2;
+  line-height: 1.5;
   text-align: center;
 }
 
-/* Mobile styles
-   ========================================================================== */
+/* Main Content */
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5.87em 0;
+  width: 86.94%;
+  margin-top: 5.87em;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 326px;
-  width: 86.93%;
+  width: 100%;
+  margin-bottom: 1em;
   background: hsl(244, 38%, 16%);
 }
 
 .header {
-  min-height: 240px;
+  height: 16em;
   width: 100%;
   background: hsl(244, 38%, 16%) url("../images/image-header-mobile.jpg") top left / 100% no-repeat;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 article {
-  margin: 3em;
+  width: 81.9%;
+  margin: 2.8em 0;
 }
 
 article h1 {
-  margin-bottom: 1.1em;
-  font-size: 1.6rem;
+  margin-bottom: .71em;
+  font-size: 1.7rem;
 }
 
 article h1 span {
@@ -97,27 +108,118 @@ aside {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: .33em;
 }
 
 aside div {
   width: 75%;
-  margin-bottom: 2.35em;
+  margin-bottom: 2em;
 }
 
 aside h1 {
   margin-bottom: .49em;
 }
 
-footer {
-  margin: 2em 0;
-}
-
 /* Tablets & Mid-size device styles
    ========================================================================== */
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 768px) {
+
+  /* Main Content */
+
+  .wrapper {
+    width: 90%;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+    width: 51.4%;
+  }
+
+  article {
+    margin: .8em 0 3.5em;
+  }
+
+  article h1 {
+    margin-bottom: 1.5em;
+  }
+
+  aside {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  aside div {
+    width: calc(100%/3);
+  }
+
+  .header {
+    order: 2;
+    padding: calc(22.8em / 2) 0;
+    width: 48.6%;
+    height: 100%;
+    background: hsl(244, 38%, 16%) url("../images/image-header-desktop.jpg") top / cover no-repeat;
+  }
+}
+
 
 /* Desktop styles
    ========================================================================== */
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+
+  /* Global selectors */
+
+  h1,
+  h2,
+  p {
+    text-align: left;
+  }
+
+  /* Main Content */
+
+  .wrapper {
+    width: 77.01%;
+  }
+
+  .info {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article {
+    width: 68.1%;
+    margin: 3.75em 0;
+  }
+
+  article h1 {
+    font-size: 2.25rem;
+  }
+
+  aside {
+    width: 68.1%;
+    margin-bottom: 3.5em;
+  }
+
+  aside div {
+    width: auto;
+    margin: 0;
+  }
+
+  .header {
+    padding: calc(29.67em / 2) 0;
+  }
+}
