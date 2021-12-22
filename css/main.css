@@ -3,13 +3,13 @@
    ========================================================================== */
 
 .attribution {
-  color: darkgrey;
+  color: whitesmoke;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: whitesmoke;
+  color: hsl(277, 64%, 61%);
 }
 
 /* ==========================================================================
