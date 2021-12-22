@@ -82,7 +82,8 @@ main {
 .header {
   height: 16em;
   width: 100%;
-  background: hsl(244, 38%, 16%) url("../images/image-header-mobile.jpg") top left / 100% no-repeat;
+  background: url("../images/image-header-mobile.jpg") top left / 100% no-repeat;
+  opacity: .45;
 }
 
 .info {
