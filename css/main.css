@@ -88,8 +88,6 @@ main {
   max-height: 22.8em;
   background-color: hsl(277, 64%, 61%);
   background: url("../images/image-header-mobile.jpg") top left / 100% no-repeat;
-  /* opacity: .3; */
-
 }
 
 .overlay {
@@ -99,7 +97,6 @@ main {
   width: 100%;
   height: 95.5%;
   background-color: hsl(277, 64%, 61%);
-  opacity: .9;
   mix-blend-mode: multiply;
 }
 
